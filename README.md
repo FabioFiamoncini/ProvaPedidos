@@ -9,7 +9,7 @@ Para executar o projeto são necessários:
   
     Java 17 ou superior
   
-    Maven (ou o wrapper mvnw incluso no projeto)
+    Maven
 
 
 Subindo o banco de dados
