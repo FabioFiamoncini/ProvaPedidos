@@ -8,7 +8,6 @@ Para executar o projeto são necessários:
 
 
   Docker ou Docker Desktop
-  
   Java 17 ou superior
   
   Maven (ou o wrapper mvnw incluso no projeto)
