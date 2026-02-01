@@ -5,16 +5,14 @@ Através do uso de requests de API REST em JSON, as operações permitem criar i
 Para executar o projeto são necessários:
 
 
-    Docker ou Docker Desktop
+    Docker
   
-    Java 17 ou superior
+    Java 17+
   
     Maven
 
 
-Subindo o banco de dados
-
-  Na raiz do projeto há um arquivo docker-compose.yml, devendo executar o comando "docker compose up -d" para subir o banco de dados em PostgreSQL.
+Subindo o banco de dados: na raiz do projeto há um arquivo docker-compose.yml, devendo executar o comando "docker compose up -d" para subir o banco de dados em PostgreSQL.
 
 
 Credenciais fixadas:
