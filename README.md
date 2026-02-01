@@ -19,25 +19,25 @@ Subindo o banco de dados
 
 Credenciais fixadas:
 
-  Database: postgres
+      Database: postgres
   
-  Usuário: postgres
+      Usuário: postgres
   
-  Senha: masterkey
+      Senha: masterkey
   
-  Porta: 5432
+      Porta: 5432
 
 
 Executando a aplicação
 
 Com o banco ativo, executar na pasta raíz:
 
-  ./mvnw spring-boot:run
+      ./mvnw spring-boot:run
 
 
 A API ficará disponível em:
 
-  http://localhost:8080
+      http://localhost:8080
 
 
 Endpoints da API (REST)
@@ -46,85 +46,85 @@ Endpoints da API (REST)
    
   Criar item:
   
-  POST /catalogo
+      POST /catalogo
   
-  Content-Type: application/json
+      Content-Type: application/json
 
-{"nome": "Notebook", "tipo": "PRODUTO", "precoUnitario": 3500.00}
+    {"nome": "Notebook", "tipo": "PRODUTO", "precoUnitario": 3500.00}
 
 
 Listar itens:
 
-  GET /catalogo
+      GET /catalogo
   
 
 Obter por ID:
 
-  GET /catalogo/{id}
+      GET /catalogo/{id}
   
 
 Atualizar item:
 
-  PUT /catalogo/{id}
+      PUT /catalogo/{id}
   
-  Content-Type: application/json
+      Content-Type: application/json
 
-{"nome": "Notebook Gamer", "tipo": "PRODUTO", "precoUnitario": 4200.00}
+    {"nome": "Notebook Gamer", "tipo": "PRODUTO", "precoUnitario": 4200.00}
 
 Excluir item:
 
-  DELETE /catalogo/{id}
+      DELETE /catalogo/{id}
 
 
 2) Pedido
    
 Criar pedido:
 
-  POST /pedidos
+      POST /pedidos
   
-  Content-Type: application/json
+      Content-Type: application/json
   
 
-{"percentualDesconto": 10}
+    {"percentualDesconto": 10}
 
 
 Listar pedidos:
 
-  GET /pedidos
+      GET /pedidos
 
 
 Obter pedido (já inclui totais dos produtos/serviços calculados com desconto aplicado aos produtos, se existente):
 
-  GET /pedidos/{id}
+      GET /pedidos/{id}
 
 
 Atualizar desconto:
 
-  PUT /pedidos/{id}
+      PUT /pedidos/{id}
   
-  Content-Type: application/json
+      Content-Type: application/json
   
 
-{"percentualDesconto": 12.5}
+    {"percentualDesconto": 12.5}
 
 
 Excluir pedido:
 
-  DELETE /pedidos/{id}
+      DELETE /pedidos/{id}
 
 
 3) Itens de Pedido
    
 Adicionar item:
 
-  POST /pedidos/{pedidoId}/itens
+      POST /pedidos/{pedidoId}/itens
   
-  Content-Type: application/json
+      Content-Type: application/json
   
 
-{"itemCatalogoId": "{idDoItemDoCatalogo}", "quantidade": 2}
+    {"itemCatalogoId": "{idDoItemDoCatalogo}", "quantidade": 2}
 
 
 Remover item:
 
-  DELETE /pedidos/{pedidoId}/itens/{itemId}
+      DELETE /pedidos/{pedidoId}/itens/{itemId}
