@@ -1,42 +1,66 @@
 Este projeto implementa um sistema básico de cadastro de produtos/serviços, pedidos e itens de pedido, utilizando Java, Spring Boot, JPA/Hibernate e PostgreSQL.
 Através do uso de requests de API REST em JSON, as operações permitem criar itens e incluí-los em pedidos, podendo aplicar desconto nos pedidos apenas sobre itens do tipo PRODUTO.
 
+
 Requisitos
+
 Para executar o projeto são necessários:
 
+
   Docker ou Docker Desktop
+  
   Java 17 ou superior
+  
   Maven (ou o wrapper mvnw incluso no projeto)
 
 
 Subindo o banco de dados
+
   Na raiz do projeto há um arquivo docker-compose.yml, devendo executar o comando "docker compose up -d" para subir o banco de dados em PostgreSQL.
 
+
 Credenciais fixadas:
+
   Database: postgres
+  
   Usuário: postgres
+  
   Senha: masterkey
+  
   Porta: 5432
 
 
 Executando a aplicação
+
 Com o banco ativo, executar na pasta raíz:
+
   ./mvnw spring-boot:run
 
+
 A API ficará disponível em:
+
   http://localhost:8080
 
 
 Endpoints da API (REST)
+
 1) Catálogo (Produto/Serviço)
+   
   Criar item:
+  
   POST /catalogo
+  
   Content-Type: application/json
+  
 
 {
+
   "nome": "Notebook",
+  
   "tipo": "PRODUTO",
+  
   "precoUnitario": 3500.00
+  
 }
 
 Listar itens:
