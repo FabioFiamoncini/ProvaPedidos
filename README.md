@@ -1,9 +1,8 @@
-ProvaPedidos – README
-  Este projeto implementa um sistema básico de cadastro de produtos/serviços, pedidos e itens de pedido, utilizando Java, Spring Boot, JPA/Hibernate e PostgreSQL.
-  Através do uso de requests de API REST em JSON, as operações permitem criar itens e incluí-los em pedidos, podendo aplicar desconto nos pedidos apenas sobre itens do tipo PRODUTO.
+Este projeto implementa um sistema básico de cadastro de produtos/serviços, pedidos e itens de pedido, utilizando Java, Spring Boot, JPA/Hibernate e PostgreSQL.
+Através do uso de requests de API REST em JSON, as operações permitem criar itens e incluí-los em pedidos, podendo aplicar desconto nos pedidos apenas sobre itens do tipo PRODUTO.
 
 Requisitos
-  Para executar o projeto são necessários:
+Para executar o projeto são necessários:
 
   Docker ou Docker Desktop
   Java 17 ou superior
