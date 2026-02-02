@@ -12,7 +12,9 @@ Para executar o projeto são necessários:
     Maven
 
 
-Subindo o banco de dados: na raiz do projeto há um arquivo docker-compose.yml, devendo executar o comando "docker compose up -d" para subir o banco de dados em PostgreSQL.
+Instruções para uso:
+
+Docker: na raiz do projeto há um arquivo docker-compose.yml, devendo executar o comando "docker compose up -d" para subir o banco de dados em PostgreSQL.
 
 
 Credenciais fixadas:
@@ -26,7 +28,6 @@ Credenciais fixadas:
       Porta: 5432
 
 
-Executando a aplicação
 
 Com o banco ativo, executar na pasta raíz:
 
